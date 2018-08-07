@@ -1,0 +1,14 @@
+[core]
+	editor = vim
+[user]
+	name = Adam Piekarczyk
+	email = adam.jan.piekarczyk@gmail.com
+[color]
+	ui = true
+[merge]
+	tool = meld
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
