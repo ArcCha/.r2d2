@@ -47,9 +47,9 @@ export PATH="$PATH:$HOME/.cargo/bin"
 # PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 
 # For virtualenvwrapper - wrapper for both python-virtualenv and python2-virtualenv
-export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-source /usr/bin/virtualenvwrapper.sh
+# export WORKON_HOME=~/.virtualenvs
+# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+# source /usr/bin/virtualenvwrapper.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -71,3 +71,10 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
 source /etc/profile.d/autojump.zsh
 
+# Local executables
+export PATH="$PATH:$HOME/.bin"
+
+export MNE_DATASETS_SAMPLE_PATH="$HOME/.mne"
+
+# Conda
+source /etc/profile.d/conda.sh
