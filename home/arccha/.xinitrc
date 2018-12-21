@@ -1,0 +1,7 @@
+#!/bin/sh
+
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+xset r rate 200 30
+setxkbmap pl
+
+exec i3
